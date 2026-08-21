@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+plannings.txt
+notes.txt
+.env
