@@ -1,6 +1,6 @@
-from models.movie import Movie
+from app.models.movie import Movie
 from sqlalchemy.orm import Session
-from schemas.movie import MovieCreate, MovieResponse, MovieUpdate
+from app.schemas.movie_schema import MovieCreate, MovieResponse, MovieUpdate
 from typing import Optional, List
 
 class MovieRepository:
