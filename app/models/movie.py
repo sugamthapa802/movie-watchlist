@@ -16,7 +16,7 @@ class Movie(Base):
 
     #TimeStamps
     created_at:Mapped[DateTime]=mapped_column(DateTime,server_default=func.now())
-    updated_at:Mapped[DateTime]=mapped_column(DateTime,onupdate=func.now())
+    updated_at:Mapped[DateTime]=mapped_column(DateTime,onupdate=func.now(),nullable=True)
     def __repr__(self):
         return f"<Movie(id={self.id}, title='{self.title}')>"
     
